@@ -11,6 +11,7 @@ a:hover {
   text-decoration: none; }
 
 body {
+  width: 1080px;
   min-width: 1080px; }
 
 .xheader {
