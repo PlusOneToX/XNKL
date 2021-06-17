@@ -1,0 +1,233 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+@mixin conter {
+    margin: 0 auto;
+    width: 960px;
+}
+
+body {
+    min-width: 960px;
+}
+
+.xheader {
+    height: 50px;
+    background-color: #fff;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+
+    .hnav {
+        @include conter;
+        min-width: 960px;
+
+        .logo {
+            a {
+                height: 50px;
+                display: block;
+
+                img {
+                    display: block;
+                    height: 50px;
+                }
+            }
+        }
+
+        .links {
+            li {
+                a {
+                    font-size: 13px;
+                    line-height: 50px;
+                    padding: 0 25px;
+                    display: block;
+                    color: #444;
+                    letter-spacing: 2px;
+                    display: block;
+
+                    img {
+                        height: 30px;
+                        margin-right: 10px;
+                    }
+
+                }
+
+                .blbltext:hover {
+                    color: #00a1d6;
+                }
+
+                .wctext:hover {
+                    color: #1aad19;
+                }
+            }
+        }
+    }
+}
+
+.xmain {
+    background-color: #fcfcfc;
+    overflow: hidden;
+}
+
+.xcmain {
+    @include conter;
+    margin-top: 82px;
+}
+
+.breadcrumbs {
+    position: relative;
+    width: 650px;
+    padding: 20px 20px 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 30px rgba(200, 200, 200, 0.25);
+    margin-bottom: 30px;
+    overflow: hidden;
+
+    h2 {
+        color: black;
+        font-weight: bold;
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    // NULL CLUB
+    .clbu_null {
+        &::after {
+            content: '';
+            width: 180px;
+        }
+    }
+
+    .xnkl_club {
+        position: relative;
+        border-radius: 22px;
+        box-shadow: 0 0 30px rgba(200, 200, 200, 0.25);
+        width: 180px;
+        background: linear-gradient(137deg, #dd41b7, #5717a6);
+        margin-bottom: 20px;
+
+
+
+        .club_imgbox {
+            width: 88px;
+            overflow: hidden;
+            margin: 0 auto;
+            padding-top: 36px;
+
+            img {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                background: #fff;
+            }
+        }
+
+        .club_name {
+            text-align: center;
+            padding: 15px 0;
+
+            span {
+                display: block;
+                margin: 0 auto;
+                width: 120px;
+                border: 1px solid #ffffff;
+                border-radius: 12px;
+                color: #ffffff;
+                font-size: 13px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+
+.widget-area {
+    .notice {
+        position: relative;
+        width: 260px;
+        padding: 20px 20px 20px;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0 0 30px rgba(200, 200, 200, 0.25);
+        margin-bottom: 30px;
+
+        h2 {
+            color: black;
+            font-weight: bold;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .longtitle {
+            color: black;
+            font-weight: bold;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .notice-content {
+            padding: 8px 0;
+            font-size: 14px;
+            color: #444;
+            text-align: center;
+            font-weight: 400;
+
+            a {
+                color: black;
+            }
+
+            img {
+                width: 220px;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+.breadcrumbs {
+    table {
+        margin: 0 auto;
+        width: 600px;
+        text-align: center;
+        border: 1px solid orange;
+
+        tr,
+        th,
+        td {
+            border: 1px solid #a8bfde;
+            height: 35px;
+        }
+
+        thead tr:nth-child(1) {
+            background-color: #767e95;
+            color: white;
+        }
+
+        thead tr:nth-child(2) {
+            background-color: #6b758d;
+            color: white;
+        }
+
+        tbody tr:nth-child(odd) {
+            background: #ccc;
+        }
+
+        tbody tr:nth-child(even) {
+            background: #f6f7fa;
+        }
+    }
+}
