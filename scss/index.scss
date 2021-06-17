@@ -188,6 +188,11 @@ body {
 
             a {
                 color: black;
+                display: block;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                padding: 0 10px;
             }
 
             img {

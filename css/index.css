@@ -127,7 +127,12 @@ body {
     text-align: center;
     font-weight: 400; }
     .widget-area .notice .notice-content a {
-      color: black; }
+      color: black;
+      display: block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding: 0 10px; }
     .widget-area .notice .notice-content img {
       width: 220px;
       border-radius: 10px; }
